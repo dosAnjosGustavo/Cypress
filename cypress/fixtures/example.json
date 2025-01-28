@@ -1,0 +1,24 @@
+{
+  "username": "rahulshettyacademy",
+  "password": "learning",
+  "products": [
+    {
+      "name": "Blackberry",
+      "price": 24.99
+    },
+    {
+      "name": "Nokia Edge",
+      "price": 24.99
+    },
+    {
+      "name": "Samsung Note 8",
+      "price": 24.99
+    },
+    {
+      "name": "iphone X",
+      "price": 24.99
+    }
+  ],
+  "role": ["stud", "teach", "consult"],
+  "userType": ["admin", "user"]
+}

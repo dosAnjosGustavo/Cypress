@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./cypress",
+    "target": "ES2019",
+    "lib": ["ESNext", "DOM"],
+    "types": ["cypress", "node"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["**/*.ts", "cypress/**/*.ts", "**/*.js", "types/*.d.ts"]
+}
