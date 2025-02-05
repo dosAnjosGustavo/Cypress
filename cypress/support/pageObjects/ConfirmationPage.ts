@@ -17,5 +17,11 @@ export default class ConfirmationPage {
     cy.get("input#checkbox2").check({ force: true });
 
     cy.get("input[value='Purchase']").click();
+
+    //should contain the text "Thank you! Your order will be delivered in next few weeks :-)."
+    cy.get("div.alert.alert-success.alert-dismissible").should(
+      "contain.text",
+      "Thank you! Your order will be delivered in next few weeks :-)"
+    );
   }
 }

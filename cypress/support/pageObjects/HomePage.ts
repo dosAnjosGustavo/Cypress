@@ -24,5 +24,7 @@ export default class HomePage {
     cy.get("input#terms").check();
 
     cy.get("input#signInBtn").click();
+
+    cy.wait(2000);
   }
 }

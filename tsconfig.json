@@ -5,10 +5,16 @@
     "target": "ES2019",
     "lib": ["ESNext", "DOM"],
     "types": ["cypress", "node"],
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["**/*.ts", "cypress/**/*.ts", "**/*.js", "types/*.d.ts"]
+  "include": [
+    "**/*.ts",
+    "cypress/**/*.ts",
+    "**/*.js",
+    "types/declarations.d.ts"
+  ]
 }

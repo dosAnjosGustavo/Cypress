@@ -5,8 +5,12 @@ export default class ProductPage {
       .then((cards) => {
         for (let i = 0; i < cards.length; i++) {
           const card = cards[i];
-          const cardName = card.querySelector("h4.card-title a").textContent;
-          const cardPrice = card.querySelector("h5").textContent;
+          const cardNameElement = card.querySelector("h4.card-title a");
+          const cardName = cardNameElement ? cardNameElement.textContent : "";
+          const cardPriceElement = card.querySelector("h5");
+          const cardPrice = cardPriceElement
+            ? cardPriceElement.textContent
+            : "";
 
           type ProductType = {
             name: string;
@@ -16,7 +20,7 @@ export default class ProductPage {
           const product = data.products.find(
             (product: ProductType) =>
               product.name === cardName &&
-              product.price === Number(cardPrice.slice(1))
+              product.price === Number(cardPrice?.slice(1))
           );
 
           expect(product).to.not.be.undefined;
