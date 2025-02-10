@@ -1,3 +1,6 @@
 node_modules/
 cypressconcepts.xlsx
 .env
+/cypress/cucumberReports
+/cypress/reports
+/cypress/videos
